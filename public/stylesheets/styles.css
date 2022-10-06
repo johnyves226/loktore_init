@@ -1,0 +1,45 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+      font-family: sans-serif;
+  }
+
+#TextInput{
+        border-bottom:dotted;
+        border-top: #f6f6f6;
+        border-left: #f6f6f6;
+        border-right: #f6f6f6;
+}
+#TextInpu{
+  border: #f6f6f6;
+}
+
+p{
+    text-align: center;
+    text-transform:capitalize;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+
+#logo_sunu{
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    display:block;
+    position:static;
+    align-items: center;
+      margin: 0 auto;
+  }
+
+  fieldset {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+#img_sonar{
+  height: 100px;
+  width: 100px;
+}

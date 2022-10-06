@@ -1,0 +1,202 @@
+
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #f6f6f6;
+	font-family: sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#logo_sunu{
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  display:block;
+  position:static;
+  align-items: center;
+	margin: 0 auto;
+}
+
+fieldset {
+  margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.content {
+	background: white;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 3em;
+}
+
+
+
+#conference-logo .half-circle {
+	background: white;
+	width: 46px;
+	height: 92px;
+	border-radius: 0 46px 46px 0;
+
+	position: absolute;
+	top: 4px;
+	left: 50%;
+}
+
+p{
+  text-align: center;
+  text-transform:capitalize;
+}
+
+#container{
+  display: flex;
+  flex-direction: column ;
+
+}
+#container2{
+  display: flex;
+  flex-direction: row;
+}
+
+#container3{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+#item{
+  padding:15px;
+  flex-grow: 1;
+}
+#item1{
+  padding:15px;
+  flex-grow: 1;
+  align-self: flex-start;
+  flex: flex-start;
+}
+
+#societe{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 90.5%;
+}
+
+#nliasse{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 25%;
+}
+#salariename{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 75.5%;
+}
+#patientname{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 600px;
+}
+
+#nassure{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 500px;
+}
+
+#trbsm{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 345px;
+}
+
+#birth{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 550px;
+}
+
+
+#desease{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 83.5%;
+}
+
+
+#dateddesease{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 81%;
+}
+
+#t1{
+  margin-left:15px;
+  width: 1200px;
+}
+thead{
+  background-color: grey;
+}
+td{
+ border: 1px solid black;
+}
+
+
+#tableinput{
+  border:#f6f6f6;
+  width:inherit;
+  width: 98%;
+}
+
+table{
+  margin-left:15px;
+  width: 1200px;
+}
+
+
+
+#ex{
+  margin-top: 40px;
+}
+
+#pr{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#case{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 90%;
+}
+#case1{
+  border-bottom: dotted;
+  border-top: #f6f6f6;
+  border-left: #f6f6f6;
+  border-right: #f6f6f6;
+  width: 10%;
+}

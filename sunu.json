@@ -1,0 +1,48 @@
+[{
+    "id_fds_sunu":"",
+    "LiasseName":"",
+    "Company":"",
+    "insuredName":"",
+    "patientName":"",
+    "paitentBirthDay":"",
+    "patientSexe":"",
+    "assuedNumber":"",
+    "repaymentRate":"",
+    "deseaseInfo":"",
+    "deseaseBegining":"",
+    "professionalActe":{
+        "date":"",
+        "acteName":"",
+        "acteCode":"",
+        "actePrice":"",
+        "acteticket":"",
+        "remainderToPaid":""
+    },
+    "drogs":{
+        "idDrogs":"",
+        "drogName":"",
+        "Posologie":"",
+        "Quantity":"",
+        "Price":""
+    },
+    "totalPrescription":"",
+    "PrescriptionModeratorTicket":"",
+    "prescriptionTotalInsurance":"",
+    "Exam":{
+        "idExam":"",
+        "ActeNature":"",
+        "Codification":"",
+        "Price":""
+    },
+    "totalExam":"",
+    "examModeratorTicket":"",
+    "examTotalInsurance":""
+
+}]
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+[
+    {
+        "Id_fds_sonar":"",
+        "insuredName":"",
+        "insuredSurname":"",
+        "PoliceNumber":"",
+        "insuredNumber":"",
+        "insureAge":"",
+        "assignmentCode":"",
+        "ordinance":{
+            "idlabel":"",
+            "label":"",
+            "dosage":"",
+            "price":"",
+            "insurancePortion":""
+        },
+        "date":"",
+        "doctorName":"",
+        "totalOrdinance":"",
+        "totalInsurance":""
+    }
+]

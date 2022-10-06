@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SUNU FORM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='/stylesheets/styles.css' />
+    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/gif" href="favicon/animated_favicon1.gif">
+    <style>
+        body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+      font-family: sans-serif;
+  }
+
+#TextInput{
+        border-bottom:dotted;
+        border-top: #f6f6f6;
+        border-left: #f6f6f6;
+        border-right: #f6f6f6;
+}
+#TextInpu{
+  border: #f6f6f6;
+}
+
+p{
+    text-align: center;
+    text-transform:capitalize;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+
+#logo_sunu{
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    display:block;
+    position:static;
+    align-items: center;
+      margin: 0 auto;
+  }
+
+  fieldset {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+#img_sonar{
+  height: 100px;
+  width: 100px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+            <div class="d-flex justify-content-center">
+                <img src="./images/logo_sunu.png" alt="logo sunu assurance">
+            </div>
+
+            <form action="/sunuredirect" method="post">
+                <div class="mb-3">
+                    <fieldset>
+                        <p class="font-weight-bold">FICHE DE SOIN</p>
+                    </fieldset>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="TextInput" class="form-label">N DE LIASSE:</label>
+                                  <input type="text" class="form-control" id="TextInput" placeholder="N DE LIASSE:" id="TextInput" name="LiasseName">
+                            </div>
+                            <div class="col-md-12"><p></p></div>
+                            <div class="col-md-12">
+                                <label for="TextInput" class="form-label">Societe:</label>
+                                  <input type="text" class="form-control" id="TextInput" placeholder="Socitete:" id="TextInput" name="company">
+                            </div>
+                            <div class="col-md-12"><p></p></div>
+                            <div class="col-md-12">
+                                <label for="TextInput" class="form-label">Nom & Prenom du salarié:</label>
+                                  <input type="text" class="form-control" id="TextInput" placeholder="Nom & Prenom du salarié:" id="TextInput" name="insuredName">
+                            </div>
+                            <div class="col-md-12"><p></p></div>
+
+                            <div class="col-md-8">
+                                <label for="TextInput" class="form-label">Nom & Prenom du malade:</label>
+                                  <input type="text" class="form-control" id="TextInput" placeholder="Nom & Prenom du malade:" id="TextInput" name="patientName">
+                            </div>
+
+                            <div class="col-md-2">
+                                <label for="TextInput" class="form-label">Né le:</label>
+                                  <input type="date" class="form-control "col-md-2" id="TextInput" placeholder="Né le:" id="TextInput" name="paitentBirthDay" aria-label="BirthDay">
+                            </div>
+                            <div class="col-md-2 ">
+                                <div class="row align-items-center">
+                                <label for="TextInput" class="form-label align-items-center">Sexe:</label>
+                                <select class="form-select align-items-center" aria-label="Default select example" name="patientSexe">
+                                    <option value="1">Masculin</option>
+                                    <option value="2">Feminin</option>
+                                    <option value="3">Autre</option>
+                                  </select>
+                                  </div>
+                            </div>
+                            <div class="col-md-12"><p></p></div>
+
+                            <div class="col-md-6">
+                                <label for="TextInput" class="form-label">N° d'assuré:</label>
+                                <input type="number" class="form-control"  id="TextInput"  placeholder="N° d'assuré" aria-label="Username" aria-describedby="basic-addon1" name="assuedNumber">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="TextInput" class="form-label">Taux de Remboussement:</label>
+                                <input type="number" class="form-control"  id="TextInput"  placeholder="Taux de Remboussement" aria-label="Username" aria-describedby="basic-addon1" name="repaymentRate">
+                            </div>
+
+                            <div class="col-md-12">
+                                <p class="text-center font-weight-bold">RESERVE AU MEDECIN TRAITANT</p>
+                            </div>
+
+
+                            <div class="col-md-9">
+                                <label for="TextInput" class="form-label">Nature de l'affection:</label>
+                                <input type="text" class="form-control"  id="TextInput"  placeholder="Nature de l'affection" aria-label="Username" aria-describedby="basic-addon1" name="deseaseInfo">
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="TextInput" class="form-label">Date de debut de l'affection:</label>
+                                <input type="date" class="form-control"  id="TextInput"  placeholder="Date de debut de l'affection" aria-label="Username" aria-describedby="basic-addon1" name="deseaseBegining">
+                            </div>
+
+                            <div class="col-md-12">
+                                <p class="text-center font-weight-bold">ACTE PROFESSIONNELS</p>
+                            </div>
+
+                            <div class="col-md-12">
+                            <table class="table">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Designation de l'acte</th>
+                                        <th>Code de l'acte</th>
+                                        <th>Cout de l'acte</th>
+                                        <th> Ticket Moderateur</th>
+                                        <th>Reste a payer de l'assureur</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="Text" id="TextInput" name="date"></td>
+                                        <td><input type="Text" id="TextInput" name="acteName"></td>
+                                        <td><input type="Text" id="TextInput" name="acteCode"></td>
+                                        <td><input type="text" id="TextInput" name="actePrice"></td>
+                                        <td><input type="Text" id="TextInput" name="acteticket"></td>
+                                        <td><input type="Text" id="TextInput" name="remainderToPaid"></td>
+                                    </tr>      
+                                </tbody>
+                            </table>
+                            </div>
+                                <div class="col-md-12 align-items-center">
+                                    <p class="font-weight-bold text-center"> Exemplaire a faire par le centre de soins de SUNU Asurances IARD Burkina faso </p>
+                                </div>
+                                <div class="col-md-12">       
+                                    <p class="font-weight-bold text-center"> PRESCRIPTION DE PRODUITS PHARMACEUTIQUES </p>
+                                </div> 
+
+                            <table  class="table table-borderless table-mb-3" id="tbl_sunu" >
+                                    <tr>
+                                        <th scope="col">Designation</th>
+                                        <th scope="col">Quantite</th>
+                                        <th scope="col">Prix</th>
+                                    </tr>
+                                <tbody>
+                                    <tr>
+                                        <th><input type="text" id="TextInput" name="drogName"></th>
+                                        <th><input type="number" id="TextInput" name="Quantity"></th>
+                                        <th><input type="number" id="TextInput" name="Price"></th>
+                                        <th><input type="button" class="button" value="Add line" onclick="addField('tbl_sunu')" /></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col">Total</th>
+                                                    <th><input type="number" id="" name="Total"></th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">Ticket Moderateur</th>
+                                                    <th><input type="number" id="" name="Mod_ticket"></th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">Reste a payer par assureur</th>
+                                                    <th><input type="number" id="" name="remaindertopaydrogue"></th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div  class="d-flex flex-column mb3">
+                                <div class="p-2">
+                                    <p class="text-center font-weight-bold">EXAMENS OU ANALYSE PRESCRITS</p>
+                                </div>
+
+                                <div class="p-2">
+                                    <table class="table" id="tble">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>Nature des actes</th>
+                                                <th>Codification</th>
+                                                <th>Montant</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td><input type="Text" id="TextInput" name="ActeNature"></td>
+                                                <td><input type="Text" id="TextInput" name="Codification"></td>
+                                                <td><input type="Text" id="TextInput" name="Price"></td><th>
+                                                <input type="button" class="button" value="Add line" onclick="addFields('tble')" /></th>
+                                            </tr>      
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p-2">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <p>signature et nom du medecins</p>
+                                    </div>
+                                    <div class="col-6 col-md-6">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col">Total</th>
+                                                    <th><input type="number" id="" name="Total"></th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">Ticket Moderateur</th>
+                                                    <th><input type="number" id="" name="Mod_ticket"></th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">Reste a payer par assureur</th>
+                                                    <th><input type="number" id="" name="remaindertopaydrogue"></th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>    
+                              
+
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="d-grid mt-3">
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </div>
+            </form>
+    </div>
+
+
+
+      </div>
+
+  </body>
+  <script src="/javascripts/validate.js">
+
+  </script>
+  </html>  

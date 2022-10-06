@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SUNU_FORM</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+
+    
+    <div class="content">
+        <div id="logo_sunu">
+            <img src="./images/logo_sunu.png" alt="logo sunu assurance">
+        </div>
+
+
+
+        <div id="main">
+            <form method="Post" action="">
+                <fieldset>
+                    <p>FICHE DE SOIN</p>
+                </fieldset>
+                <fieldset>
+                    <div  id="container">
+                        <div id="item">
+                            <label for="fname">N DE LIASSE:</label>
+                            <input type="text" id="nliasse" name="nliasse">
+                        </div>
+
+                        <div id="item">
+                            <label for="fname">Societé:</label>
+                            <input type="text" id="societe" name="societe"> </br>
+                        </div>
+
+                        
+                        <div id="container2">
+                            <div id="item">
+                                <label for="fname">N d'assure:</label>
+                                <input type="text" id="nassure" name="employeName"></br>
+                            </div> 
+                            <div id="item"> 
+                                <label for="fname">Taux de Remboussement:</label>
+                                <input type="text" id="trbsm" name="trbsm"></br>
+                            </div>   
+                        </div> 
+
+                        <div id="container2">
+                            <div id="item">
+                                <label for="fname">Nom & Prenoms Du Malade:</label>
+                                <input type="text" id="nassure" name="PatientName"></br>
+                            </div> 
+                            <div id="item"> 
+                                <label for="fname">Ne le:</label>
+                                <input type="text" id="trbsm" name="birthday"></br>
+                            </div>   
+                        </div> 
+
+                            <div id="item">
+                                <label for="fname">Sexe:</label>
+                                <select name="gender" id="gender">
+                                    <option value="masculin">Masculin</option>
+                                    <option value="fenimin">Feminin</option>
+                                    <option value="Autre">Autre</option>
+                                  </select>
+                            </div>
+                       
+
+                    
+
+                    </div>
+                    
+                    <div id="medecin">
+                        <p>RESERVE AU MEDECIN TRAITANT</p>
+                    </div>
+
+                    <div class="container">
+                        <div id="item">
+                            <label for="fname">Nature de l'affection:</label>
+                            <input type="text" id="desease" name="desease">
+                        </div>
+
+                        <div id="item">
+                            <label for="fname">Date de debit de l'affection</label>
+                            <input type="text" id="dateddesease" name="dateddesease"> </br>
+                        </div>
+                    </div>
+
+                    <div id="actpro">
+                        <p>ACTE PROFESSIONNELS</p>
+                    </div>
+
+                    <table id="t1">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Designation de l'acte</th>
+                            <th>Code de l'acte</th>
+                            <th>Cout de l'acte</th>
+                            <th> Ticket Moderateur</th>
+                            <th>Reste a payer de l'assureur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="tableinput" name="dateacte"></td>
+                            <td><input type="text" id="tableinput" name="dactedesign"></td>
+                            <td><input type="text" id="tableinput" name="actecode"></td>
+                            <td><input type="text" id="tableinput" name="acteprice"></td>
+                            <td><input type="text" id="tableinput" name="modticket"></td>
+                            <td><input type="text" id="tableinput" name="remaindertopay"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <div id="ex">
+                        <p> Exemplaire a faire par le centre de soins de SUNU Asurances IARD Burkina faso </p>
+
+                    </div>
+
+                    <div id="pr">
+                        <p> PRESCRIPTION DE PRODUITS PHARMACEUTIQUES </p>
+                    </div>
+
+                    
+                    <table id="tbl">
+                        <tr>
+                            <th>Designation</th>
+                            <th>Quantite</th>
+                            <th>Prix</th>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <th><input type="text" id="case" name="designation"></th>
+                            <th><input type="number" id="case1" name="Quantite"></th>
+                            <th><input type="number" id="case" name="price"></th>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <input type="button" class="button" value="Add line" onclick="addField('tbl')" />
+
+
+                </fieldset>
+                <div class="d-grid mt-3">
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="javascripts/validate.js">
+    </script>
+  </body>
+
+</html>

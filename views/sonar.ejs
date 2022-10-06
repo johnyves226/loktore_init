@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SONAR FORM</title>
+        <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+    <link rel='stylesheet' href='/stylesheets/styles.css' />
+    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/gif" href="favicon/animated_favicon1.gif">
+  </head>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+            <img   id="img_sonar" class="rounded float-start" src="./images/logo_sonar.jpg" alt="logo sonar assurance">
+        </div>
+          <div class="col-10">
+            <h2 class="text-center">SONAR GROUP LAAFI</h2>
+            <div class="text-center">
+              <div class="blockquote">
+                FEUILLE DE SOINS
+              </div>
+              <div class="text-muted">
+                Médecin/Clinique
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-12"><p></p></div>
+    <div class="container">
+          <form action="POST"  class="row g-3">
+            <div class="col-md-6">
+              <label for="TextInput" class="form-label">Nom assuré:</label>
+                <input type="text" class="form-control" id="TextInput" placeholder="Non assuré:" id="TextInput" name="insuredName" >
+            </div>
+            <div class="col-md-6">
+              <label for="TextInput" class="form-label">Prenom:</label>
+              <input type="text" class="form-control"  id="TextInput"  placeholder="Prenom:" aria-label="Username" aria-describedby="basic-addon1" name="insuredSurname">
+            </div>
+            <div class="col-md-12"><p></p></div>
+            <div class="col-md-6">
+              <label for="TextInput" class="form-label">N Police:</label>
+              <input type="text" class="form-control"  id="TextInput"  placeholder="Numero de police:" aria-label="Username" aria-describedby="basic-addon1" name="PoliceNumber">
+            </div>
+
+            <div class="col-md-4">
+              <label for="TextInput" class="form-label">N° assuré:</label>
+              <input type="text" class="form-control col-md-6"  id="TextInput"  placeholder="N° assuré" aria-label="NUMERO ASSURE" aria-describedby="basic-addon1" name="insuredNumber">
+            </div>
+            <div class="col-md-2">
+              <label for="TextInput" class="form-label">Ages:</label>
+              <input type="number" class="form-control" placeholder="ages:" id="TextInput" name="insureAge" >
+            </div>
+
+            <div class="col-md-12"><p></p></div>
+
+            <div class="col-md-4">
+              <label for="TextInput" class="form-label">Code d'affectation:</label>
+              <input type="number" class="form-control"  id="TextInput"  placeholder="Code d'affectation:" name="assignmentCode">
+            </div>
+            <div><p></p></div>
+            <div class="col-md-12">
+            <table class="table"  id="tbl_sonar">
+              <thead class="table-grey">
+                  <tr>
+                      <th >Ordonance/Bulletin       Hopi/Pre-Post/Ambulatoire</th>
+                      <th>Montant</th>
+                      <th>Part assure</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td> 
+                            <input class="col-md-8" type="Text" id="TextInput" name="label"> 
+                            <input class="" type="Text" id="TextInput" placeholder="posologie" name="dosage" >
+                      </td>
+
+                      <td><input class="fw-normal mb-1" type="Text" id="TextInput" name="price"></td>
+                      <td><input  class="fw-normal mb-0" type="Text" id="TextInput" name="insurancePortion"></td>
+                      <td><input type="button" class="button" value="Add line" onclick="addCol('tbl_sonar')"/></td>
+                  </tr> 
+
+              </tbody>  
+          </table>
+        </div>
+          <div class="col-md-12"><p></p></div>
+
+          <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6 ">
+                <div class="col-md-6">
+                  <label for="TextInput" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="TextInput" placeholder="Non assuré:" id="TextInput"name="date">
+                </div>
+                <div class="col-md-6">
+                  <!--place pour la signature numerique du medecin-->
+                  <label for="TextInput" class="form-label">Nom & Prenom du medecin</label>
+                    <input type="text" class="form-control" id="TextInput" placeholder="Nom & Prenom du medecin" id="TextInput" name="doctorName">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <table class="table ">
+                  <tbody>
+                    <tr>
+                      <th scope="col">TOTAL</th>
+                      <th><input type="number" id="" name="totalOrdinance"></th>
+                    </tr>
+                    <tr>
+                      <th scope="col">TOTAL SONAR</th>
+                      <th><input type="number" id="" name="totalInsurance"></th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>            
+         </div>
+        </div>
+
+      </form>
+    </div>
+
+
+
+
+
+  </body>
+  <script src=" /javascripts/validate.js">
+  </script>
+</html>
